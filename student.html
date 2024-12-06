@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Panel</title>
+    <style>
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #9849bb, #359de2);
+    /* background: linear-gradient(135deg, #2570b7, #e6a16c); */
+    color: #fff;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+/* Navigation Menu */
+.student-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c3e50;
+    padding: 1em;
+}
+
+.student-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 0;
+}
+
+.student-nav ul li {
+    display: inline;
+}
+
+.student-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Student Home Section */
+.student-home {
+    text-align: center;
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin: 1em;
+}
+
+/* Operations Section */
+.operations {
+    text-align: center;
+    padding: 2em;
+}
+
+.operations .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+    flex: 1;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Overview Section */
+.overview {
+    padding: 2em;
+    text-align: center;
+}
+
+.overview .overview-details {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.overview .overview-details div {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1em;
+    border-radius: 8px;
+}
+
+/* Notice Board */
+.notice-board {
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 1em;
+    border-radius: 8px;
+}
+
+.notice-board ul {
+    list-style: none;
+    padding: 0;
+}
+
+.notice-board ul li {
+    margin: 0.5em 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #2c3e50;
+    position: bottom;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .operations .cards {
+        flex-direction: column;
+    }
+
+    .overview .overview-details {
+        flex-direction: column;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="student-nav">
+        <h1>Job Referral System</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <!-- <li><a href="#">Dashboard</a></li> -->
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">My Applications</a></li>
+            <li><a href="#">Welcome, [User’s Name]</a></li>
+            <li><a href="#">Log Out</a></li>
+        </ul>
+    </nav>
+
+    <!-- Student Home Section -->
+    <header class="student-home">
+        <h2>Welcome to the Student Panel</h2>
+        <p>Find jobs, connect with alumni, and track your applications.</p>
+    </header>
+
+    <!-- Operations Section -->
+    <section class="operations">
+        <h3>Operations</h3>
+        <div class="cards">
+            <div class="card">
+                <h4>View Jobs</h4>
+                <p>Browse and search for job opportunities.</p>
+                <a href="#">Explore</a>
+            </div>
+            <div class="card">
+                <h4>Apply for Jobs</h4>
+                <p>Submit applications for job postings.</p>
+                <a href="#">Apply Now</a>
+            </div>
+            <div class="card">
+                <h4>Application Status</h4>
+                <p>Submited applications for job postings.</p>
+                <a href="#">Vew details</a>
+            </div>
+            <div class="card">
+                <h4>Set Notifications</h4>
+                <p>Stay updated with new job postings.</p>
+                <a href="#">Set Alerts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="overview">
+        <h3>Overview</h3>
+        <div class="overview-details">
+            <div>
+                <h4>Total Job Posts</h4>
+                <p>120</p>
+            </div>
+            <div>
+                <h4>Total Alumni</h4>
+                <p>350</p>
+            </div>
+            <div>
+                <h4>Total Job Seeker</h4>
+                <p>1350</p>
+            </div>
+            <div>
+                <h4>Total Companies</h4>
+                <p>45</p>
+            </div>
+        </div>
+        <p>Vision: Connecting students with opportunities through alumni referrals.</p>
+    </section>
+
+    <!-- Notice Board -->
+    <section class="notice-board">
+        <h3>Notice Board</h3>
+        <ul>
+            <li>Job Fair on December 10th – Don’t miss it!</li>
+            <li>Alumni Talk on Networking Strategies – Register Now.</li>
+            <li>New jobs posted by XYZ Corp. – Check them out!</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Job Referral System | All rights reserved.</p>
+        <div class="social-icons">
+            <!-- Facebook Icon -->
+            <a href="https://www.facebook.com/farukahmed011" target="_blank">
+                <img src="assets/fb.png" alt="">
+            </a>
+            <!-- LinkedIn Icon -->
+            <a href="https://www.linkedin.com/in/faruk-ahmed-058921265/" target="_blank">
+                <img src="assets/lkdn.png" alt="">
+            </a>
+             <!-- Email Icon -->
+             <a href="srfarukahmed@gmail.com">
+                <img src="assets/em.png" alt="">
+            </a>
+
+        </div>
+    </footer>
+</body>
+</html>

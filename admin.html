@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Panel</title>
+    <style>
+        /* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2570b7, #e6a16c);
+    /* background: linear-gradient(135deg, #9849bb, #359de2); */
+    color: #fff;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+/* Navigation Menu */
+.alumni-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c3e50;
+    padding: 1em;
+}
+
+.alumni-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 0;
+}
+
+.alumni-nav ul li {
+    display: inline;
+}
+
+.alumni-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Alumni Home Section */
+.alumni-home {
+    text-align: center;
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin: 1em;
+}
+
+/* Overview Section */
+.overview {
+    padding: 2em;
+    text-align: center;
+}
+
+.overview .overview-details {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.overview .overview-details div {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1em;
+    border-radius: 8px;
+}
+
+/* Operations Section */
+.operations {
+    text-align: center;
+    padding: 2em;
+}
+
+.operations .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+    flex: 1;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background: #ff7e5f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Notice Board */
+.notice-board {
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 1em;
+    border-radius: 8px;
+}
+
+.notice-board ul {
+    list-style: none;
+    padding: 0;
+}
+
+.notice-board ul li {
+    margin: 0.5em 0;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #2c3e50;
+    position: ;
+   
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .operations .cards {
+        flex-direction: column;
+    }
+
+    .overview .overview-details {
+        flex-direction: column;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="alumni-nav">
+        <h1>Job Referral System</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <!-- <li><a href="#">Operations</a></li> -->
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Welcome, [User’s Name]</a></li>
+            <li><a href="#">Log Out</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <header class="alumni-home">
+        <h2>Welcome to the Alumni Panel</h2>
+        <p>Connect with students, manage job postings, and review applications.</p>
+    </header>
+
+    <!-- Overview Section -->
+    <section class="overview">
+        <h3>Overview</h3>
+        <div class="overview-details">
+            <div>
+                <h4>Total Applications Received</h4>
+                <p>150</p>
+            </div>
+            <div>
+                <h4>Today's Applications</h4>
+                <p>12</p>
+            </div>
+            <div>
+                <h4>Total Job Posts</h4>
+                <p>25</p>
+            </div>
+            <div>
+                <h4>Total Number of Users</h4>
+                <p>400</p>
+            </div>
+            <div>
+                <h4>Total Number of Alumnus</h4>
+                <p>100</p>
+            </div>
+            <div>
+                <h4>Total Community Members</h4>
+                <p>500</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operations Section -->
+    <section class="operations">
+        <h3>Operations</h3>
+        <div class="cards">
+            <div class="card">
+                <h4>Add Job Postings</h4>
+                <p>Create and share new job opportunities with students.</p>
+                <a href="#">Add Job</a>
+            </div>
+            <div class="card">
+                <h4>Edit or Remove Job Postings</h4>
+                <p>Edit or Remove and share new job opportunities with students.</p>
+                <a href="#">Edit or Remove Job</a>
+            </div>
+            <div class="card">
+                <h4>View Applications</h4>
+                <p>Review applications received for your postings.</p>
+                <a href="#">View Applications</a>
+            </div>
+            <div class="card">
+                <h4>Find Candidates</h4>
+                <p>Search for students based on specific skills.</p>
+                <a href="#">Search Candidates</a>
+            </div>
+            <div class="card">
+                <h4>Generate Reports</h4>
+                <p>View detailed statistics about jobs and applications.</p>
+                <a href="#">Generate Report</a>
+            </div>
+        </div>
+    </section>
+
+   <!-- Notice Board -->
+   <section class="notice-board">
+    <h3>Notice From Admin</h3>
+    <ul>
+        <li>Job Fair on December 10th – Don’t miss it!</li>
+        <li>Alumni Talk on Networking Strategies – Register Now.</li>
+        <li>New jobs posted by XYZ Corp. – Check them out!</li>
+    </ul>
+</section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Job Referral System | All rights reserved.</p>
+        <div class="social-icons">
+            <!-- Facebook Icon -->
+            <a href="https://www.facebook.com/farukahmed011" target="_blank">
+                <img src="assets/fb.png" alt="">
+            </a>
+            <!-- LinkedIn Icon -->
+            <a href="https://www.linkedin.com/in/faruk-ahmed-058921265/" target="_blank">
+                <img src="assets/lkdn.png" alt="">
+            </a>
+             <!-- Email Icon -->
+             <a href="srfarukahmed@gmail.com">
+                <img src="assets/em.png" alt="">
+            </a>
+
+        </div>
+    </footer>
+</body>
+</html>
